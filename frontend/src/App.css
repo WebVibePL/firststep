@@ -1,0 +1,41 @@
+.App h1 {
+    text-align: center;
+    background-color: #c0c0c0;
+    margin: 20px 80px;
+    border-radius: 5px;
+    color: #585c91;
+}
+
+.App button {
+    margin: 0 auto;
+    display: block;
+    background-color: #4283d0;
+    padding: 10px 20px;
+    border: 1px solid #5c8fcc;
+    border-radius: 100px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.App button:hover {
+    transform: translateY(-5px);
+}
+
+.App button:focus {
+    outline: none;
+}
+
+.App p {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    max-width: 500px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3));
+}

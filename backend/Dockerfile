@@ -8,12 +8,6 @@ WORKDIR /opt/app
 # copy app pom and sources
 COPY pom.xml /opt/app/
 COPY src /opt/app/src
-COPY .mvn /opt/app/.mvn
-COPY mvnw /opt/app/
-
-RUN ls -la /opt/app/src
-RUN ls -la /opt/app/.mvn
-RUN ls -la /opt/app/mvnw
 
 RUN mvn clean install
 

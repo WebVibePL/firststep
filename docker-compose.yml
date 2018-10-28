@@ -10,8 +10,13 @@ services:
             - 8080
         ports:
             - "8080:8080"
-        networks:
-            - spring-cloud-network
-networks:
-    spring-cloud-network:
-        driver: bridge
+    web:
+        container_name: frontend
+        build:
+            context: ./frontend/
+            dockerfile: Dockerfile
+        image: firststep-frontend:latest    #Tells Docker which name it should give to the image when build-features are used. Otherwise it is searching for this image in the library or remote-registry
+        expose:
+            - 5000
+        ports:
+            - "5000:5000"

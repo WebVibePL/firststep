@@ -13,7 +13,7 @@ RUN npm install -g serve
 CMD serve -s build
 
 # Let Docker know about the port that serve runs on.
-EXPOSE 8080
+EXPOSE 5000
 
 
 # Install all dependencies of the current project.
@@ -34,4 +34,4 @@ RUN npm run build --production
 ## COMMANDS ##
 
 # docker build -t react-docker .
-# docker run -it --rm -p 8080:8080--name react-demo react-docker
+# docker run -it --rm -p 5000:5000--name react-demo react-docker

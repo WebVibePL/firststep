@@ -10,8 +10,9 @@ class App extends Component {
   }
 
   clickHandler = () => {
-    axios.get('https://jsonplaceholder.typicode.com/posts/1')
+    axios.get('http://localhost:8080/employees')
       .then(response => {
+		console.log(response)
         this.setState({
           output: response.data.title
         });
